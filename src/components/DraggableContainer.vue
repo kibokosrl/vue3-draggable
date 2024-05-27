@@ -2,7 +2,7 @@
     <div @dragover.prevent.stop="onDragOver">
         <transition-group name="draggable-item-list">
             <draggable-item v-for="(item, index) in items" :key="item.id" :item="item" :containerId="id" :position="index" @itemDragOver="onItemDragOver" @dragenter.prevent>
-                <slot name="item" :item="item.data" :itemId="item.id" :position="position"></slot>
+                <slot name="item" :item="item.data" :itemId="item.id" :position="index"></slot>
             </draggable-item>
         </transition-group>
     </div>
