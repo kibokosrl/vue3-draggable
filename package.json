@@ -1,6 +1,6 @@
 {
   "name": "vue3-draggable",
-  "version": "2.0.10",
+  "version": "2.0.11",
   "private": false,
   "description": "simple drag&drop component for vue 3.x",
   "author": {
@@ -8,10 +8,10 @@
     "email": "kyle.hwan.k@gmail.com"
   },
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "build-library": "vue-cli-service build --target lib --name vue3-draggable ./src/index.js"
+    "serve": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service serve",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service build",
+    "lint": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service lint",
+    "build-library": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service build --target lib --name vue3-draggable ./src/index.js"
   },
   "main": "dist/vue3-draggable.umd.min.js",
   "files": [
